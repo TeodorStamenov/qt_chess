@@ -16,6 +16,7 @@ void Menu::onNewGame()
     manager_.startNewGame("", [this](){
         manager_.onStartNewGame();
     });
+    qDebug() << "test";
 }
 
 void Menu::onLoadGame()
