@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package server;
+
+message SrvPossibleMoves {
+  int32 id = 1;
+  int32 index = 2;
+  repeated int32 moves = 3 [packed=false];
+}

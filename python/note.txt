@@ -1,0 +1,10 @@
+D:\workspace\protobuf_pre-build\Debug
+
+JavaScript
+
+protoc --proto_path=D:\workspace\Qt\Chess\protofiles --js_out=import_style=commonjs,binary:D:\workspace\Qt\Chess\javascript\proto_messages D:\workspace\Qt\Chess\protofiles\SrvNewGameOk.proto
+
+
+Cpp
+
+protoc -I=D:\workspace\Qt\Chess\protofiles --cpp_out=D:\workspace\Qt\Chess\cpp\source\protomessages D:\workspace\Qt\Chess\protofiles\SrvNewGameOk.proto

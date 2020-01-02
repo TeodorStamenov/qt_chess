@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package server;
+
+message SrvMoveResult 
+{
+  int32  id          = 1;
+  int32  result      = 2;
+  int32  fromIndex   = 3;
+  int32  toIndex     = 4;
+  string fen         = 5;
+  string color       = 6;
+  string capture     = 7;
+  string flags       = 8;
+  string oppCheck    = 9;
+  int32  oppKingPos  = 10;
+}

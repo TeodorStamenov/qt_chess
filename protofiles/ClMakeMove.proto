@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package client;
+
+message ClMakeMove {
+  int32 id = 1;
+  int32 fromIndex = 2;
+  int32 toIndex = 3;
+}
