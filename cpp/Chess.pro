@@ -102,11 +102,11 @@ HEADERS += \
     source/communication/CommandHandlerI.h \
     source/utils/PossibleMoves.h
 
-win32: LIBS += -L$$PWD/../../../protobuf/lib/ -llibprotobufd
+win32: LIBS += -L$$PWD/../../../protobuf/lib/ -llibprotobuf
 
 INCLUDEPATH += $$PWD/../../../protobuf/include/ \
                 source/
 DEPENDPATH += $$PWD/../../../protobuf/include/
 
-win32:!win32-g++: PRE_TARGETDEPS += $$PWD/../../../protobuf/lib/libprotobufd.lib
-else:win32-g++: PRE_TARGETDEPS += $$PWD/../../../protobuf/lib/libprotobufd.a
+win32:!win32-g++: PRE_TARGETDEPS += $$PWD/../../../protobuf/lib/libprotobuf.lib
+else:win32-g++: PRE_TARGETDEPS += $$PWD/../../../protobuf/lib/libprotobuf.a
